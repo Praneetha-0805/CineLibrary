@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<header class="header">
+    <meta charset="UTF-8">
+    <h1 class="logo">🎬 CineLibrary</h1>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search movies...">
+
+        <button onclick="searchMovie()">Search</button>
+
+        <select id="genreFilter" onchange="filterGenre(this.value)">
+            <option value="all">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+
+        <button onclick="showFavorites()">❤️ Favorites</button>
+        <link rel="stylesheet" href="style.css">
+    </div>
+</header>
+<body>
+
+    <main id="movieContainer"></main>
+    <div id="detailsSection" style="padding:20px;"></div>
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+    <p>
+        Made by 
+        <a href="about.html" class="link">Praneetha Sai</a> |
+        <a href="about.html" class="link">About</a> |
+        <a href="contact.html" class="link">Contact</a> |
+        <a href="#" class="link">Privacy Policy</a>
+    </p>
+</footer>
+</body>
+</html>
